@@ -27,7 +27,7 @@ namespace Library_consol_app
         {
             //Console.WriteLine("Tytuł: " +Tytul +", Autor: " +Autor +", Data publikacji: " +DataPublikacji );
             //Console.WriteLine("Inny sposób kodowania");
-            Console.WriteLine($"Tytuł: {Tytul}, Autor: {Autor}, Data publikacji: {DataPublikacji}");
+            Console.WriteLine($"Autor: {Autor}, Tytuł: {Tytul}, Data publikacji: {DataPublikacji}");
         }
 
 
