@@ -55,7 +55,7 @@ namespace Library_consol_app
                         // ciekawy sposób pokazujący użycie TryParse !!!
 
                         //Tworzenie nowego obiektu i dodanie do biblioteki
-                        Ksiazka ksiazka = new Ksiazka(tytul, autor, dataPublikacji);
+                        Ksiazka ksiazka = new Ksiazka(id, tytul, autor, dataPublikacji, czyPrzeczytana);
                         biblio.DodajKsiazke(ksiazka);
 
                         break;

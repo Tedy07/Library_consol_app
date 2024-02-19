@@ -8,17 +8,21 @@ namespace Library_consol_app
 {
     public class Ksiazka
     {
-        // właściwości == property książki, poniżej są to property
+        // właściwości == property  książki, poniżej są to property
+        public int Id { get; set; }
         public string Tytul { get; set; }
         public string Autor { get; set; }
         public int DataPublikacji { get; set; }
+        public bool CzyPrzeczytana { get; set; }
 
         //przykład konstruktora z parametrami
-        public Ksiazka(string tytul, string autor, int dataPublikacji)
+        public Ksiazka(int id, string tytul, string autor, int dataPublikacji, bool czyPrzeczytana)
         {
+            Id = id;
             Tytul = tytul;
             Autor = autor;
             DataPublikacji = dataPublikacji;
+            CzyPrzeczytana = czyPrzeczytana;
         }
 
 
@@ -27,10 +31,11 @@ namespace Library_consol_app
         {
             //Console.WriteLine("Tytuł: " +Tytul +", Autor: " +Autor +", Data publikacji: " +DataPublikacji );
             //Console.WriteLine("Inny sposób kodowania");
-            Console.WriteLine($"Autor: {Autor}, Tytuł: {Tytul}, Data publikacji: {DataPublikacji}");
+            string przeczytana = CzyPrzeczytana ? "Przeczytana" : "Nieprzeczytana";
+            Console.WriteLine($"Id = {Id}, Autor: {Autor}, Tytuł: {Tytul}, Data publikacji: {DataPublikacji}, Status: {przeczytana}");
         }
 
-
+        // 00:15 filmu
 
     }
 }
