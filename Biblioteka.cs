@@ -31,7 +31,7 @@ namespace Library_consol_app
             }
             else
             {
-                Console.WriteLine("Ksiażki dostępne w bibliotece: ");
+                 Console.WriteLine("Ksiażki dostępne w bibliotece: ");
                 foreach (var Ksiazka in ksiazki)
                 {
                     Ksiazka.WyswietlInformacjeOKsiazce();
